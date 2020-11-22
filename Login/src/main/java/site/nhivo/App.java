@@ -18,14 +18,14 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("login"), 400, 200);
         stage.setScene(scene);
         stage.setTitle(" Java 2 - Demo Login");
         stage.getIcons().add(new Image("file:./src/main/resources/images/login.png"));
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
